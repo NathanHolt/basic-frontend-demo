@@ -1,0 +1,19 @@
+
+
+body {
+    background: #483D80;
+    margin: 0;
+}
+
+
+#main-page {
+    width: 90%;
+    background-color: GhostWhite;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+h1 {
+    color: red;
+}
