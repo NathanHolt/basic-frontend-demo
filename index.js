@@ -12,10 +12,26 @@ header.innerHTML = "Hello and Greetings to:"
 //attaching new element to main
 main.appendChild(header)
 
-for(let i = 0; i < 10; i++) {
-    let message = document.createElement("div")
-    message.innerHTML ="<ul><li>" + list[i] + "</li></ul>";
-
-    main.appendChild(message)
+//way of declaring method
+const addNum = (num1, num2) => {
+   return num1 + num2
 }
+
+//second way of declaring method
+function addNum2(num1, num2) {
+    return num1 + num2
+}
+
+
+let message = document.createElement("div")
+let names = "<ul>"
+
+for(let i = 0; i < 10; i++) {
+    names += "<li>" + list[i] + "</li>";
+    console.log(addNum2(i, i))
+}
+
+names += "</ul>"
+message.innerHTML = names;
+main.appendChild(message)
 
