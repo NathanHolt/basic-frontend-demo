@@ -7,6 +7,10 @@ body {
 }
 
 
+h1 {
+    color: red;
+}
+
 #main-page {
     width: 90%;
     background-color: GhostWhite;
@@ -15,16 +19,52 @@ body {
     box-shadow: 5px 5px 5px #181D10;
 }
 
+.head {
+    color: blue;
+}
+
+#real-head {
+    color: maroon;
+}
+
 h2 {
-    width: 70%
+    width: 70%;
     margin: 0 auto;
 }
 
+.list {
+    display: flex;
+    justify-content: center;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+    color: darkGrey;
+    background: silver;
+    width: 65%;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+
+
 li {
     list-style-type: none;
+    margin: .5rem;
+    padding: 1rem;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 5%;
 }
 
-
-h1 {
+li:hover {
     color: red;
+    background: rgba(255,0,0,0.3);
 }
+
