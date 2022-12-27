@@ -98,18 +98,18 @@ addButton.addEventListener('click', (e) => {
 
     console.log(information)
 
-//    let tempHTML = "<div>"
-//    tempHTML += `<h2>${information.name}</h2>`
-//    tempHTML += `<h3>Age: ${information.age}</h3>`
-//    tempHTML += "<ul>"
-//
+    let tempHTML = "<div>"
+    tempHTML += `<h2>${information.name}</h2>`
+    tempHTML += `<h3>Age: ${information.age}</h3>`
+    tempHTML += "<ul>"
+
     for(let i = 0; i < information.items.length; i++) {
         tempHTML += `<li>${information.items[i]}</li>`
     }
 
-//    tempHTML += "</ul></div>"
-//
-//    infoDiv.innerHTML = tempHTML
+    tempHTML += "</ul></div>"
+
+    infoDiv.innerHTML = tempHTML
 //    infoDiv.innerHTML += tempHTML
 })
 
