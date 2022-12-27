@@ -11,12 +11,13 @@ h1 {
     color: red;
 }
 
-#main-page {
+.page {
     width: 90%;
     background-color: GhostWhite;
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #181D10;
+    padding: 1rem;
 }
 
 .head {
@@ -25,6 +26,27 @@ h1 {
 
 #real-head {
     color: maroon;
+    list-style-type: circle;
+}
+
+#real-head:before {
+   content:"\A";
+   width:10px;
+   height:10px;
+   border-radius:50%;
+   background: rgba(74, 114, 245, .8);
+   margin-right: 5px;
+   display:inline-block;
+}
+
+#real-head:after {
+   content:"\A";
+   width:10px;
+   height:10px;
+   border-radius:50%;
+   background: #C0C0C0;
+   margin-right: 5px;
+   display:inline-block;
 }
 
 h2 {
@@ -68,3 +90,29 @@ li:hover {
     background: rgba(255,0,0,0.3);
 }
 
+#show {
+    cursor: pointer;
+    width: 10rem;
+    margin: 1rem auto;
+}
+
+#funPage {
+    display: none;
+    background: rgba(255,0,0,0.7);
+    width: 300px;
+    height: 200px;
+    border-radius: 20%;
+    z-index: 3;
+    position: fixed;
+    left: 35%;
+    color: white;
+}
+
+#funPage > h1 {
+    color: white;
+}
+
+
+#info {
+    margin: 0 auto;
+}
